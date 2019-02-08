@@ -1,1 +1,55 @@
+ion-content{
+  --ion-background-color: #323E48;
+}
+
+#spacer-top{
+  height: 15%;
+  width: 100%;
+
+}
+
+#logo-movido{
+  width: 50%;
+  height: auto;
+  margin: 20% 25%;
+
+}
+
+
+div.border{
+  width: 78%;
+  background-color: #323E48;
+  margin-left: 11%;
+  margin-top: 5%;
+  border: 1px solid #FF5200;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+.input{
+  margin-left: 5%;
+  width: 90%;
+  height: 90%;
+  color: white;
+
+}
+
+ion-button{
+  margin:10% 11%;
+}
+
+.forgot-password-box{
+  margin: 0% 11%;
+  text-align: center;
+}
+
+.forgot-password-box ion-label{
+  width: 100%;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
 

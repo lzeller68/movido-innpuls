@@ -1,12 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content padding-top="">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div id="spacer-top"></div>
+
+  <ion-img id="logo-movido" [src]="logoUrl"></ion-img>
+
+
+    <div class="border">
+      <ion-input class="input" type="email" placeholder="E-Mail" ></ion-input>
+    </div>
+
+  <div class="border">
+    <ion-input class="input" type="password" placeholder="Passwort"></ion-input>
+  </div>
+
+  <ion-button mode="ios" expand="block" fill="outline" color="gold" (click)="login()">Login</ion-button>
+
+
+  <div class="forgot-password-box">
+    <ion-label>Passwort vergessen?</ion-label>
+  </div>
+
+
+
+
+
+
+
 </ion-content>

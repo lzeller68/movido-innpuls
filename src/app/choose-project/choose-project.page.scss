@@ -1,0 +1,33 @@
+ion-content{
+  --ion-background-color: #323E48;
+}
+
+#spacer-top{
+  height: 15%;
+  width: 100%;
+
+}
+
+#logo-movido{
+  width: 50%;
+  height: auto;
+  margin: 20% 25%;
+}
+
+.container-show-user{
+  width: 100%;
+  text-align: center;
+}
+
+.container-select-customer{
+  margin: 15% 11%;
+  border: 1px solid #FF5200;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container-select-customer ion-select{
+  color: #FF5200;
+
+}

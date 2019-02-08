@@ -1,0 +1,22 @@
+<ion-content padding>
+
+  <div id="spacer-top"></div>
+
+  <ion-img id="logo-movido" [src]="logoUrl"></ion-img>
+
+  <div class="container-show-user">
+    <ion-label style="color: #fff; opacity: 0.25; font-size: 22px;">Angemeldet als<br></ion-label>
+    <ion-label style="font-size: 18px; color: #FF5200">{{user}}</ion-label>
+  </div>
+
+
+  <div class="container-select-customer">
+    <ion-select mode="ios" interface="action-sheet" placeholder="Kunde auswählen" cancelText="Abbrechen" (ionChange)="openHomeScreenPage()">
+      <ion-select-option value="i">innpuls Werbeagentur GmbH</ion-select-option>
+      <ion-select-option value="h">HEISSBAUER - Computer und Bürotechnik e.U.</ion-select-option>
+      <ion-select-option value="s">STONGO - Stricksocken für Jedermann GmbH</ion-select-option>
+      <ion-select-option value="z">ZELLER - Elite Business für reiche und schöne e.U.</ion-select-option>
+    </ion-select>
+  </div>
+
+</ion-content>

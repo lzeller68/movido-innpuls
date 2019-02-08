@@ -1,0 +1,165 @@
+ion-header{
+  height: 8%;
+  background: #323E48;
+}
+
+ion-content{
+  --ion-background-color: #323E48;
+}
+
+#header{
+  height: 100%;
+}
+
+.container-header-logo{
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  display: inline-block;
+}
+
+.container-header-logo ion-img{
+  position: relative;
+  height: 60%;
+  width: auto;
+  top: 20%;
+}
+
+.container-header-menu{
+  display: inline-block;
+  float: right;
+  width: 12%;
+  height: 100%;
+}
+
+.menu-button{
+  display: grid;
+  position: relative;
+  height: 80%;
+  top: 10%;
+}
+
+.container-header-menu ion-menu-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-slides{
+  height: 33%;
+  --bullet-background:transparent;
+  --bullet-background-active:transparent;
+}
+
+ion-slide{
+  display: block;
+  background-size: 100% 100%;
+
+}
+
+.container-slider-header{
+  width: 95%;
+  height: 15%;
+  margin: 1% 2.5%;
+  display: inline-block;
+
+}
+
+.container-slider-header ion-img{
+  display: inline;
+  float: right;
+  height: 100%;
+  width: 10%;
+
+}
+
+.container-slider-projectname{
+  width: 95%;
+  margin: 1% 2.5%;
+  height: 54%;
+}
+
+.container-slider-projectname ion-label{
+  position: relative;
+  display: inline-block;
+  height: 50%;
+  width: 90%;
+  top: 50%;
+  color: #ff5200;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.container-slider-footer{
+  display: inline-block;
+  width: 95%;
+  height: 15%;
+  margin-top: 1%;
+}
+
+.icon-add{
+  display: inline-block;
+  padding: 1px;
+  margin-left: 4%;
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+
+.icon-details{
+  padding: 1px;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 10%;
+  margin-right: 4%;
+}
+
+
+.container-content-all-projects{
+  width: 100%;
+  height: 10%;
+  background-color: #ff5200;
+}
+
+.button-all-projects{
+  position: relative;
+  top: 20%;
+  left: 5%;
+  height: 60%;
+  width: 90%;
+  color: #323E48;
+  border: 1px solid #323E48;
+  text-align: center;
+}
+
+.button-all-projects p{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+}
+
+.container-details{
+  display: block;
+  height: 57%;
+  background-color: #fff;
+}
+
+.container-cards{
+  display: inline-block;
+  width: 94%;
+  height: 94%;
+  margin: 3%;
+  background-color: #e9e9e9;
+}
+
+
+
+
+
+
+
+

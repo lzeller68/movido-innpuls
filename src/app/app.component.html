@@ -1,3 +1,16 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="content1" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <ion-img class="image-clear" src="./assets/icon/icon_clear.png"></ion-img>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <div class="container-content-menu">
+            <ion-img src="./assets/images/movido_grey.png"></ion-img>
+            <div class="menu-item-text">HOME</div>
+        </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1"></ion-router-outlet>
 </ion-app>
