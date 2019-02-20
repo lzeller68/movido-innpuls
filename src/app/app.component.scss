@@ -1,27 +1,100 @@
+@font-face {
+  font-family: gothamBoldRegular;
+  src: url("../assets/Fonts/Gotham_Bold_Regular.ttf");
+}
+
+@font-face {
+  font-family: gothamLightRegular;
+  src: url("../assets/Fonts/Gotham_Light_Regular.otf");
+}
+
+@font-face {
+  font-family: sfProTextRegular;
+  src: url("../assets/Fonts/SFProText_Regular.ttf");
+}
+
+.container-header{
+  width: 100%;
+  height: 10%;
+}
+
 .image-clear{
   width: 7%;
   height: auto;
   float: right;
-  margin-right: 4%;
+  margin-right: 6%;
+  margin-top: 13%;
 }
 
-.container-content-menu{
-  display: block;
-  width: 90%;
+.list-item{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 10% 15%;
+}
+
+.list-item ion-img{
+  display: flex;
+  grid-column: 1;
+
+}
+
+.list-item div{
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+  margin-left: 10%;
+  font-family: gothamBoldRegular, sans-serif;
+  font-size: 17px;
+  width: 100%;
+  justify-content: left;
+
+}
+
+.container-footer{
+  width: 100%;
   height: 30%;
-  background-color: #28e070;
-  margin: 5%;
+  margin-top: 60%;
 }
 
-.container-content-menu ion-img{
+.container-footer ion-select{
   display: inline-block;
-  width: 25%;
-  height: auto;
+  width: 70%;
+  height: 20%;
+  margin: 2% 15%;
+
+  font-family: gothamLightRegular, sans-serif;
+  font-size: 17px;
+  color: #323E48;
+  border: 1px solid #323E48;
+  box-sizing: border-box;
 }
 
-.container-content-menu div{
+.container-footer button{
   display: inline-block;
-  width: 75%;
-  height: 50%;
-  background-color: #7044ff;
+  width: 70%;
+  height: 20%;
+  margin: 2% 15%;
+
+  font-family: gothamLightRegular, sans-serif;
+  font-size: 17px;
+  color: #323E48;
+  background-color: transparent;
+  border: 1px solid #323E48;
+  box-sizing: border-box;
 }
+
+.container-footer a{
+  display: inline-block;
+  width: 70%;
+  margin: 5% 15%;
+
+  font-family: sfProTextRegular, sans-serif;
+  font-size: 17px;
+  color: rgba(50, 62, 72, 0.5);
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+

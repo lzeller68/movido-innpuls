@@ -1,15 +1,36 @@
 <ion-app>
-  <ion-menu contentId="content1" side="end">
-    <ion-header>
-      <ion-toolbar>
-        <ion-img class="image-clear" src="./assets/icon/icon_clear.png"></ion-img>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-        <div class="container-content-menu">
-            <ion-img src="./assets/images/movido_grey.png"></ion-img>
-            <div class="menu-item-text">HOME</div>
+  <ion-menu contentId="content1" side="end" no-bounce>
+    <ion-content no-bounce>
+
+        <div class="container-header">
+            <ion-img class="image-clear" src="./assets/icon/icon_clear.png"></ion-img>
         </div>
+
+
+
+            <div class="list-item">
+                    <ion-img src="./assets/images/movido_grey.png"></ion-img>
+                    <div class="menu-item-text">HOME</div>
+             </div>
+
+        <div class="list-item">
+            <ion-img src="./assets/images/movido_grey.png"></ion-img>
+            <div class="menu-item-text">PROJEKTE</div>
+        </div>
+
+        <div class="list-item">
+            <ion-img src="./assets/images/movido_grey.png"></ion-img>
+            <div class="menu-item-text">STATISTIK</div>
+        </div>
+
+        <div class="container-footer">
+            <ion-select></ion-select>
+            <button>LOGOUT</button>
+            <a>Imprint</a>
+
+        </div>
+
+
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="content1"></ion-router-outlet>
