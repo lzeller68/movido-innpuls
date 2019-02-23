@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuController} from '@ionic/angular';
+import {MenuController, NavController} from '@ionic/angular';
 import {first} from 'rxjs/operators';
 
 @Component({
@@ -16,7 +16,11 @@ export class HomeScreenPage implements OnInit {
   backgroundImageSliderTwo = 'url("./assets/images/slider_two.jpg")';
   backgroundImageSliderThree = 'url("./assets/images/slider_three.jpg")';
   isFavourited: boolean;
-  constructor(private menu: MenuController) {
+  navCtrl: NavController;
+  menu: MenuController;
+  constructor(menu: MenuController, navCtrl: NavController) {
+    this.navCtrl = navCtrl;
+    this.menu = menu;
   }
   ngOnInit() {
     this.isFavourited = false;
@@ -26,5 +30,8 @@ export class HomeScreenPage implements OnInit {
   }
   getIcon(): string {
     return (this.isFavourited) ? './assets/icon/heart_filled.png' : './assets/icon/heart_outlined.png';
+  }
+  openDetailPage() {
+    this.navCtrl.navigateForward('detail-page');
   }
 }

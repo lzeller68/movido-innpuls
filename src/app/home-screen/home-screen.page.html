@@ -29,7 +29,7 @@
 
         <div class="container-slider-footer">
           <ion-img class="icon-add" src="./assets/icon/icon_plus.png"></ion-img>
-          <ion-img class="icon-details" src="./assets/icon/icon_more.png"></ion-img>
+          <ion-img class="icon-details" (click)="openDetailPage()" src="./assets/icon/icon_more.png"></ion-img>
         </div>
     </ion-slide>
     <ion-slide [style.background-image]="backgroundImageSliderTwo">
@@ -42,7 +42,7 @@
 
       <div class="container-slider-footer">
         <ion-img class="icon-add" src="./assets/icon/icon_plus.png"></ion-img>
-        <ion-img class="icon-details" src="./assets/icon/icon_more.png"></ion-img>
+        <ion-img class="icon-details" (click)="openDetailPage()" src="./assets/icon/icon_more.png"></ion-img>
       </div>
     </ion-slide>
     <ion-slide [style.background-image]="backgroundImageSliderThree">
@@ -55,7 +55,7 @@
 
       <div class="container-slider-footer">
         <ion-img class="icon-add" src="./assets/icon/icon_plus.png"></ion-img>
-        <ion-img class="icon-details" src="./assets/icon/icon_more.png"></ion-img>
+        <ion-img class="icon-details" (click)="openDetailPage()" src="./assets/icon/icon_more.png" ></ion-img>
       </div>
     </ion-slide>
   </ion-slides>

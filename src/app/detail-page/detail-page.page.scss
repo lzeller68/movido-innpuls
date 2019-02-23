@@ -1,0 +1,43 @@
+@font-face {
+  font-family: gothamBoldRegular;
+  src: url("/src/assets/Fonts/Gotham_Bold_Regular.ttf");
+}
+
+@font-face {
+  font-family: gothamLightRegular;
+  src: url("/src/assets/Fonts/Gotham_Light_Regular.otf");
+}
+
+.container-header{
+  display: block;
+  width: 100%;
+  padding: 4.5%;
+  height: 10%;
+}
+
+.image-clear{
+  display: inline-block;
+  margin-top: 1.5%;
+  height: 80%;
+  width: 10%;
+  float: right;
+}
+
+.row-item{
+  margin: 2% 15% 8% 10%;
+}
+
+.content-static{
+  font-family: gothamLightRegular, sans-serif;
+  color: #000000;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.content-dynamic{
+  font-family: gothamLightRegular, sans-serif;
+  color: #ff5200;
+  line-height: 24px;
+  font-size: 22px;
+}
+

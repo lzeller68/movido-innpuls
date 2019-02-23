@@ -3,7 +3,7 @@
     <ion-content no-bounce>
 
         <div class="container-header">
-            <ion-img class="image-clear" src="./assets/icon/icon_clear.png"></ion-img>
+            <ion-img class="image-clear" src="./assets/icon/icon_clear.png" (click)="closeMenu()"></ion-img>
         </div>
 
 
@@ -25,7 +25,7 @@
 
         <div class="container-footer">
             <ion-select></ion-select>
-            <button>LOGOUT</button>
+            <button (click)="logout()" >LOGOUT</button>
             <a>Imprint</a>
 
         </div>
