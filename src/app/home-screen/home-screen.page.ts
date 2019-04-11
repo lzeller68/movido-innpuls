@@ -34,4 +34,7 @@ export class HomeScreenPage implements OnInit {
   openDetailPage() {
     this.navCtrl.navigateForward('detail-page');
   }
+  openSubmissionPage() {
+    this.navCtrl.navigateForward('submissions');
+  }
 }

@@ -1,9 +1,101 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>submissions</ion-title>
-  </ion-toolbar>
+<ion-header padding-top>
+  <div id="header">
+
+    <div class="container-header-logo">
+      <ion-img src="./assets/images/logo_movido_quer.png"></ion-img>
+    </div>
+
+
+    <div class="container-header-menu">
+      <div class="menu-button">
+        <ion-menu-button autoHide="false" color="light" menuToggle ></ion-menu-button>
+      </div>
+
+    </div>
+  </div>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+  <div>
+
+    <ion-img class="image-project" src="./assets/images/slider_two.jpg"></ion-img>
+
+    <div class="back-button">
+      <div class="back-icon">
+        <ion-img src="./assets/icon/icon_back.png"></ion-img>
+      </div>
+      <div class="back-text"><span>Back</span></div>
+    </div>
+
+  </div>
+
+
+  <ion-searchbar mode="ios"></ion-searchbar>
+
+  <div class="container-body-submissions">
+
+    <div class="container-submissions-header">
+      <ion-select class="select-filter" placeholder="Filter"></ion-select>
+      <ion-select class="select-sort" placeholder="Sorted by Name"></ion-select>
+    </div>
+
+    <div class="container-submission-info">
+
+      <ion-grid >
+        <ion-row margin-bottom>
+        <ion-col  size="10">
+          <ion-row><span class="sub-title">Projektname mit 25 Zeichen LÄNGE und auch noch viel mehr weil das keiner mehr lesen will</span></ion-row>
+          <ion-row margin-top><span class="sub-date">2019-01-13, 13:59</span></ion-row>
+          <ion-row><span class="sub-progress">IIIIII 70%</span></ion-row>
+        </ion-col>
+
+        <ion-col size="2">
+            <ion-img class="icon-details" src="./assets/icon/icon_details.png"></ion-img>
+        </ion-col>
+
+          <div class="item-seperator"></div>
+
+        </ion-row>
+
+        <ion-row margin-bottom>
+          <ion-col  size="10">
+            <ion-row><span class="sub-title">Projektname mit 25 Zeichen LÄNGE und auch noch viel mehr weil das keiner mehr lesen will</span></ion-row>
+            <ion-row margin-top><span class="sub-date">2019-01-13, 13:59</span></ion-row>
+            <ion-row><span class="sub-progress">IIIIII 70%</span></ion-row>
+          </ion-col>
+
+          <ion-col size="2">
+            <ion-img class="icon-details" src="./assets/icon/icon_details.png"></ion-img>
+          </ion-col>
+
+          <div class="item-seperator"></div>
+
+        </ion-row>
+
+        <ion-row margin-bottom>
+          <ion-col  size="10">
+            <ion-row><span class="sub-title">Projektname mit 25 Zeichen LÄNGE und auch noch viel mehr weil das keiner mehr lesen will</span></ion-row>
+            <ion-row margin-top><span class="sub-date">2019-01-13, 13:59</span></ion-row>
+            <ion-row><span class="sub-progress">IIIIII 70%</span></ion-row>
+          </ion-col>
+
+          <ion-col size="2">
+            <ion-img class="icon-details" src="./assets/icon/icon_details.png"></ion-img>
+          </ion-col>
+
+          <div class="item-seperator"></div>
+
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div id="container-all-submissions">
+      <ion-button class="button-all-submissions" fill="outline" shape="shape">ALLE SUBMISSIONS</ion-button>
+    </div>
+
+  </div>
+
 
 </ion-content>

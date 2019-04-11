@@ -1,0 +1,166 @@
+@font-face {
+  font-family: gothamLightRegular;
+  src: url("/src/assets/Fonts/Gotham_Light_Regular.otf");
+}
+
+ion-header{
+  height: 8%;
+  background: #323E48;
+}
+
+ion-content{
+  --ion-background-color: #fff;
+}
+
+#header{
+  height: 100%;
+}
+
+.container-header-logo{
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  display: inline-block;
+}
+
+.container-header-logo ion-img{
+  position: relative;
+  height: 60%;
+  width: auto;
+  top: 20%;
+}
+
+.container-header-menu{
+  display: inline-block;
+  float: right;
+  width: 12%;
+  height: 100%;
+}
+
+.menu-button{
+  display: grid;
+  position: relative;
+  height: 80%;
+  top: 10%;
+}
+
+.container-header-menu ion-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-project{
+  height: auto;
+  width: 100%;
+}
+
+.back-button{
+  display: block;
+  float: left;
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  z-index: 1000;
+  margin: 10px;
+}
+
+.back-icon{
+  display: inline-block;
+  width: 16px;
+  float: left;
+}
+.back-icon ion-img{
+  width:16px;
+  display: grid;
+  justify-content: center;
+}
+
+.back-text{
+  position: relative;
+  top: 5px;
+  left: 5px;
+  font-family: gothamLightRegular, sans-serif;
+  font-size: 17px;
+  line-height: normal;
+  letter-spacing: -0.024em;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+.container-body-submissions{
+  width: 95%;
+  background-color: #F5F5F5;
+  margin: 0.2% 2.5%;
+}
+
+.container-submissions-header{
+  width: 100%;
+
+  display: inline-block;
+}
+
+.container-submissions-header .select-filter{
+  float: left;
+  font-family: gothamLightRegular, sans-serif;
+  color: #323E48;
+  font-size: 14px;
+
+}
+.container-submissions-header .select-sort{
+  float: right;
+  font-family: gothamLightRegular, sans-serif;
+  color: #323E48;
+  font-size: 14px;
+}
+
+
+.container-submission-info{
+  width: 100%;
+
+}
+
+.sub-title{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: gothamLightRegular, sans-serif;
+}
+.sub-date{
+  font-family: gothamLightRegular, sans-serif;
+  font-size: 14px;
+  color: rgba(50, 62, 72, 0.5);
+}
+
+.sub-progress{
+  font-family: gothamLightRegular, sans-serif;
+  font-size: 14px;
+  color: rgba(50, 62, 72, 0.5);
+}
+
+.icon-details{
+  width: 35px;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+
+}
+
+.item-seperator{
+  width: 95%;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border: 1px solid #ffffff;
+
+}
+
+.button-all-submissions{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 5%;
+}
