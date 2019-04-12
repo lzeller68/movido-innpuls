@@ -1,12 +1,7 @@
 import {Component, NgModule} from '@angular/core';
-import {NavController} from '@ionic/angular';
-import {Observable} from 'rxjs';
-import {HttpClientModule, HttpClient, HttpHeaders} from '@angular/common/http';
-import {RequestOptions} from '@angular/http';
-
-
-
-
+import {NavController, ToastController} from '@ionic/angular';
+import {HttpClientModule, HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {Authentication} from '../Utils/authentication';
 
 @Component({
   selector: 'app-home',
@@ -15,41 +10,48 @@ import {RequestOptions} from '@angular/http';
 })
 export class HomePage {
   logoUrl = './assets/images/logo_movido.png';
-  result: any = [];
-  data: Observable<any>;
-  constructor(public navCtrl: NavController, public  http: HttpClient) {
+  username: string;
+  password: string;
+  constructor(public navCtrl: NavController, public  client: HttpClient, public toastCtrl: ToastController) {
   }
 
   login() {
-    this.getData();
+    this.navCtrl.navigateRoot('choose-project');
+  }
 
-    this.navCtrl.navigateForward('choose-project');
-
-
+  async presentError() {
+    const toast = await this.toastCtrl.create({
+      message: 'Benutzername oder Passwort falsch!',
+      duration: 5000
+    });
+    toast.present();
   }
 
   getData() {
-    const url = ('https://portal.dev.movido.at/login');
-
-    const postData = new HttpHeaders();
-    postData.append('username', 'moritzstingl65@gmail.com');
-    postData.append('password', 'movido-moritz');
-    postData.append('provider', 'users');
-
-    const token = this.http.post(url, postData);
-
-    console.log(token);
-
-    const headers = new HttpHeaders();
-    headers.append('Authorization', 'Bearer ' + token)
+      const headers = new HttpHeaders();
+    headers.append('Access-Control-Allow-Origin' , '*');
+    headers.append('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
     headers.append('Accept', 'application/json');
-    headers.append('Content-Type', 'application/json');
+    headers.append('Content-Type', 'application/json; charset=utf-8');
+    const body = {username: this.username, password: this.password, provider: 'users'};
+    const url = ('https://api.dev.movido.at/login');
+    this.client.post(url,
+        body, {
+        headers: headers,
+          withCredentials: true
+      }).subscribe(data => {
 
-    this.http.post('https://portal.dev.movido.at/login', {headers: headers})
-        .subscribe(data => {
-          console.log(data['_body']);
-        }, error => {
-          console.log(error);
-        });
+          const auth = new Authentication(data);
+          console.log('LOGIN SUCCEED');
+          console.log('TYPE: ' + auth.token_type);
+          console.log('TOKEN: ' + auth.access_token);
+          this.login();
+    }
+    , error => {
+        console.log('EIN FEHLER IST AUFGETRETEN');
+        this.presentError();
+    }
+    );
+
   }
 }
