@@ -1,9 +1,146 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>submission-details</ion-title>
-  </ion-toolbar>
+<ion-header padding-top>
+    <div id="header">
+
+        <div class="container-header-logo">
+            <ion-img src="./assets/images/logo_movido_quer.png"></ion-img>
+        </div>
+
+
+        <div class="container-header-menu">
+            <div class="menu-button">
+                <ion-menu-button autoHide="false" color="light" menuToggle></ion-menu-button>
+            </div>
+
+        </div>
+    </div>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+
+    <div>
+
+        <ion-img class="image-project" [src]="sld_img"></ion-img>
+
+        <div class="back-button" (click)="backPressed()">
+            <div class="back-icon">
+                <ion-img src="./assets/icon/icon_back.png"></ion-img>
+            </div>
+            <div class="back-text"><span>Back</span></div>
+        </div>
+    </div>
+
+
+    <div class="share-icon">
+        <ion-img src="./assets/icon/icon_share.png"></ion-img>
+    </div>
+
+
+    <div class="container-body-submission-details">
+
+        <ion-grid>
+            <ion-row margin-bottom>
+                <ion-col size="10">
+                    <ion-row><span class="sub-title">Projektname mit 25 Zeichen LÄNGE</span></ion-row>
+                    <ion-row margin-top><span class="sub-header">Personalisierung-ID</span></ion-row>
+                    <ion-row><span class="sub-id-value">9213</span></ion-row>
+                    <ion-row margin-top><span class="sub-header">Projekt-ID</span></ion-row>
+                    <ion-row><span class="sub-id-value">212</span></ion-row>
+                    <ion-row margin-top><span class="sub-header">Projektstatus</span></ion-row>
+                    <span><span class="sub-progress">IIIIII</span> <span class="sub-progress-value"> 70%</span></span>
+                    <ion-row margin-top><span class="sub-header">Erstellungsdatum</span></ion-row>
+                    <ion-row margin-top><span class="sub-date">2019-01-13, 13:59</span></ion-row>
+                    <ion-row>
+
+
+                    </ion-row>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <div class="container-body-submission-details-firms">
+        <ion-grid margin-bottom>
+                <ion-col size="10">
+                    <ion-row ><span class="sub-header-firm-prop">Firmenname</span>   </ion-row>
+                    <ion-row>
+                    <div class="container-firm-property">
+                        <span>firmname</span>
+                    </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Name + Titel</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>Julia Wiesinger BSc MSc</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Anschrift</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>Hanriederstraße 25</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Länderkürzel</span></ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>A</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">PLZ</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>4150</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Ort</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>Rohrbach-Berg</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Ort kurz</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>Rohrbach</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Kunde Name</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>mailworx</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">Kunde E-Mail</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>jw@mailworx.info</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">E-Mail Betreff</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>Test Movido</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">E-Mail Text</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>video URL</span>
+                        </div>
+                    </ion-row>
+                    <ion-row ><span class="sub-header-firm-prop">VIMEO Link</span>   </ion-row>
+                    <ion-row>
+                        <div class="container-firm-property">
+                            <span>url</span>
+                        </div>
+                    </ion-row>
+                </ion-col>
+        </ion-grid>
+
+    </div>
+
+
 
 </ion-content>
