@@ -6,14 +6,14 @@
 
 
     <div class="border">
-      <ion-input class="input" type="email" placeholder="E-Mail" ></ion-input>
+      <ion-input class="input" [(ngModel)]="username" type="email" placeholder="E-Mail" ></ion-input>
     </div>
 
   <div class="border">
-    <ion-input class="input" type="password" placeholder="Passwort"></ion-input>
+    <ion-input class="input" [(ngModel)]="password" type="password" placeholder="Passwort"></ion-input>
   </div>
 
-  <ion-button mode="ios" expand="block" fill="outline" color="gold" (click)="login()">Login</ion-button>
+  <ion-button mode="ios" expand="block" fill="outline" color="gold" (click)="getData()">Login</ion-button>
 
 
   <div class="forgot-password-box">
