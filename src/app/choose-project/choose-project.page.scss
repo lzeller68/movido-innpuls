@@ -21,13 +21,14 @@ ion-content{
 
 .container-select-customer{
   margin: 15% 11%;
+  padding: 5px;
   border: 1px solid #FF5200;
   box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
 }
 
-.container-select-customer ion-select{
+.container-select-customer ion-label{
   color: #FF5200;
 
 }

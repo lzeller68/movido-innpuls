@@ -10,13 +10,8 @@
   </div>
 
 
-  <div class="container-select-customer">
-    <ion-select mode="ios" interface="action-sheet" placeholder="Kunde auswählen" cancelText="Abbrechen" (ionChange)="openHomeScreenPage()">
-      <ion-select-option value="i">innpuls Werbeagentur GmbH</ion-select-option>
-      <ion-select-option value="h">HEISSBAUER - Computer und Bürotechnik e.U.</ion-select-option>
-      <ion-select-option value="s">STONGO - Stricksocken für Jedermann GmbH</ion-select-option>
-      <ion-select-option value="z">ZELLER - Elite Business für reiche und schöne e.U.</ion-select-option>
-    </ion-select>
+  <div class="container-select-customer" (click)="openCompanyPicker()" >
+    <ion-label>Kunden auswählen</ion-label>
   </div>
 
 </ion-content>
