@@ -30,7 +30,12 @@ export class AppComponent {
     this.menuCtrl.close();
    this.navCtrl.navigateBack('home');
   }
-  closeMenu(){
+  closeMenu() {
     this.menuCtrl.close();
   }
+
+  openSubmissionDetailsPage() {
+    this.navCtrl.navigateForward('submission-details');
+  }
+
 }
